@@ -17,3 +17,16 @@ let greeting = "Welcome to TypeScript!"; // Implicitly assigned string type
 console.log(isActive, count, message);
 console.log(isAvailable, total, greeting);
 
+let n: null = null; // null type
+let u: undefined = undefined; // undefined type
+let big: bigint = 9007199254740991n; // bigint type (note the 'n' at the end)
+
+// Why we need to use symbol type?
+// The symbol type is used to create unique identifiers for object properties.
+// It is often used to avoid name clashes in objects and to create private properties.
+// Symbols are immutable and can be used as keys in objects.
+
+let sym: symbol = Symbol("id"); // symbol type
+
+console.log(n, u, big, sym);
+
