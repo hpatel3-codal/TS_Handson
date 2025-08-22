@@ -34,6 +34,7 @@ class Employee {
     public name: string; // Public property, accessible everywhere
     protected department: string; // Protected property, accessible in this class and subclasses
 
+    // This is contructor. We do not need to add class name in constructor like Java & C++.
     constructor(id: number, name: string, department: string) {
         this.id = id;
         this.name = name;
@@ -168,8 +169,9 @@ test.runTest();
 
 abstract class Polygon {
 
-    abstract getPolyArea() : number;
+    abstract getPolyArea() : number; // Abstract method
 
+    // Non Abstract Method
     public PolyGonWidth(a : number ,b : number) : number {
         return a * b;
     }
