@@ -14,8 +14,8 @@ let mixedArray: (number | string | boolean)[] = [1, "two", 3, "four", true];
 // Empty array that can hold any type
 let emptyArray: any[] = [];
 emptyArray.push("Hello"); // Add a string
-emptyArray.push(42);      // Add a number
-emptyArray.push(true);    // Add a boolean
+emptyArray.push(42); // Add a number
+emptyArray.push(true); // Add a boolean
 
 console.log("Empty array after adding values:", emptyArray); // ["Hello", 42, true]
 
@@ -24,9 +24,9 @@ let booleanArray: boolean[] = [true, false, true];
 console.log("Boolean array:", booleanArray); // [true, false, true]
 
 // Print other arrays
-console.log("Numbers array:", numbers);      // [1, 2, 3, 4, 5]
-console.log("Fruits array:", fruits);        // ["apple", "banana", "cherry"]
-console.log("Mixed array:", mixedArray);     // [1, "two", 3, "four", true]
+console.log("Numbers array:", numbers); // [1, 2, 3, 4, 5]
+console.log("Fruits array:", fruits); // ["apple", "banana", "cherry"]
+console.log("Mixed array:", mixedArray); // [1, "two", 3, "four", true]
 
 // Readonly array (cannot be changed after creation)
 let readonlyNumbers: readonly number[] = [10, 20, 30];
@@ -35,7 +35,7 @@ console.log("Readonly numbers:", readonlyNumbers); // [10, 20, 30]
 
 // Type inference for arrays
 let inferredArray = [1, 2, 3]; // TypeScript infers number[]
-inferredArray.push(4);         // Allowed
+inferredArray.push(4); // Allowed
 // inferredArray.push("five"); // ❌ Error: Only numbers allowed
 console.log("Inferred array:", inferredArray); // [1, 2, 3, 4]
 
