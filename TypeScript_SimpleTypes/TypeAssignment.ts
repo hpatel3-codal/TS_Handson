@@ -1,5 +1,5 @@
 // Typescript have simple types like number, string, boolean, etc.
-// Here is an example of how to assign these types to variables.    
+// Here is an example of how to assign these types to variables.
 
 // boolean type : true or false values
 // number type : any number
@@ -29,4 +29,3 @@ let big: bigint = 9007199254740991n; // bigint type (note the 'n' at the end)
 let sym: symbol = Symbol("id"); // symbol type
 
 console.log(n, u, big, sym);
-

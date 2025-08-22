@@ -3,13 +3,13 @@
 // Partial : Partial changes all the properties in an object to be optional.
 
 interface User {
-    id: number;
-    name: string;
-    email: string;
+  id: number;
+  name: string;
+  email: string;
 }
 
 const updateUser: Partial<User> = {
-    name: "Himen" //only update part of User
+  name: "Himen", //only update part of User
 };
 
 console.log(updateUser);
@@ -17,15 +17,15 @@ console.log(updateUser);
 // Required : Required changes all the properties in an object to be required.
 
 interface Car {
-    make: string,
-    model: string,
-    mileage?: number;
+  make: string;
+  model: string;
+  mileage?: number;
 }
 
 let myCar: Required<Car> = {
-    make: 'BMW',
-    model: "E6",
-    mileage: 26
+  make: "BMW",
+  model: "E6",
+  mileage: 26,
 };
 
 console.log(myCar);
@@ -33,34 +33,34 @@ console.log(myCar);
 // Record : Defining an Object type with specific key type & value type.
 
 const nameAgeMap: Record<string, number> = {
-    'Himen': 31,
-    'Jack': 26
-}
+  Himen: 31,
+  Jack: 26,
+};
 console.log(nameAgeMap);
 
 // Omit : It removes keys from an object type.
 
 interface Person {
-    name: string,
-    age: number,
-    location?: string;
+  name: string;
+  age: number;
+  location?: string;
 }
 
-const bob: Omit<Person, 'age' | 'location'> = {
-    name: 'Himen'
+const bob: Omit<Person, "age" | "location"> = {
+  name: "Himen",
 };
 console.log(bob);
 
 //Pick : It removes all but the spcified keys from object type.
 
 interface Person {
-    name: string,
-    age: number,
-    location?: string;
+  name: string;
+  age: number;
+  location?: string;
 }
 
-const bobName : Pick<Person, 'name'>= {
-    name : 'Jack'
+const bobName: Pick<Person, "name"> = {
+  name: "Jack",
 };
 console.log(bobName);
 
@@ -96,5 +96,3 @@ const person: Readonly<Person> = {
 // person.name = 'Israel'; // It will be not allowing this.
 
 console.log(person);
-
-
